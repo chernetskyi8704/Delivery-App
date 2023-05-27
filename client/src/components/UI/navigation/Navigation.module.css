@@ -1,0 +1,14 @@
+.navItems {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 30px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: orange;
+}
+
+.navItem {
+  color: white;
+}

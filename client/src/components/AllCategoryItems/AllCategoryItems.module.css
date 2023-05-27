@@ -1,0 +1,36 @@
+.productsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.productsItems {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid #ccc;
+}
+
+.noChoosedCategory {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+}

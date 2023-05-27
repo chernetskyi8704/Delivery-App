@@ -1,0 +1,17 @@
+.categoriesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  gap: 20px;
+  border-right: 1px solid rgb(153, 153, 153);
+  padding: 30px 0px 0px 0px;
+}
+
+.categoryItems {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  font-size: 18px;
+  gap: 15px;
+}

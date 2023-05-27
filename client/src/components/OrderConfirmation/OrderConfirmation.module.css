@@ -1,0 +1,60 @@
+/* OrderConfirmation.module.css */
+
+.orderConfirmation {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  gap: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffbf00;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.messageContainer {
+  animation: slideIn 1s ease-in-out;
+}
+
+.message {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.button {
+  background-color: #ffffff;
+  color: #ffbf00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #69d7ff;
+  color: white;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

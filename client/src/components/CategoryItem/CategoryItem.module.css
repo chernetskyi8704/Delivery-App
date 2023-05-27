@@ -1,0 +1,14 @@
+.categoryItem {
+  border-radius: 15px;
+  padding: 20px 70px;
+  cursor: pointer;
+}
+
+.categoryItem:hover {
+  background-color: #c07d00;
+}
+
+.active {
+  background-color: #c07d00;
+  color: rgb(255, 255, 255);
+}

@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  text-align: start;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.checkoutButton {
+  padding: 20px;
+}

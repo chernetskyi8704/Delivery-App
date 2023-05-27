@@ -1,0 +1,75 @@
+.productsItem {
+  display: grid;
+  grid-template-columns: 150px auto auto;
+  grid-gap: 10px;
+  align-items: center;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 22px;
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.productImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.amount {
+  width: 400px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.chooseAmount {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.chooseAmount > input[type="text"] {
+  width: 70px;
+  padding: 5px;
+  margin-right: 15px;
+  text-align: center;
+  border-bottom: 1px solid rgb(153, 153, 153);
+}
+
+.changeAmount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.totalCost {
+  font-weight: bold;
+}
+
+.deleteItem {
+  margin-left: auto;
+}
+
+.deleteItem a {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  font-size: 24px;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: #f44336;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.totalPriceContainer {
+  display: flex;
+  gap: 5px;
+}
