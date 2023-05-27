@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { useGetAllProductsQuery } from "../../features/products/productsApiSlice";
-import classes from "./AllCategoryItems.module.css";
+import classes from "./CategoryItems.module.css";
 import Loader from "../UI/loader/Loader";
 import ProductItem from "../ProductItem/ProductItem";
 

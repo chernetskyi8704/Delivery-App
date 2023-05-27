@@ -3,8 +3,8 @@ import { changeIsOrderConfirmModalOpen } from "../../features/shoppingCart/shopp
 import { useSelector } from "react-redux";
 import ModalWindow from "../../components/UI/modalWindow/ModalWindow";
 import OrderConfirmation from "../../components/OrderConfirmation/OrderConfirmation";
-import AllCategoriesItems from "../../components/AllCategoriesitems/AllCategoriesItems";
-import AllCategoryItems from "../../components/AllCategoryItems/AllCategoryItems";
+import AllCategoriesItems from "../../components/AllCategoriesItems/CategoriesItems";
+import AllCategoryItems from "../../components/AllCategoryItems/CategoryItems";
 
 const ShopPage = () => {
   const { isOrderConfirmModalOpen } = useSelector(

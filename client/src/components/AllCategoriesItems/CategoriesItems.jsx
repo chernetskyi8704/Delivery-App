@@ -1,4 +1,4 @@
-import classes from "./AllCategoriesItems.module.css";
+import classes from "./CategoriesItems.module.css";
 import { useGetAllCategoriesQuery } from "../../features/products/productsApiSlice";
 import Loader from "../UI/loader/Loader";
 import CategoryItem from "../CategoryItem/CategoryItem";
