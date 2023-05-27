@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["https://chernetskyi-delivery-app.netlify.app"];
 
 const corsOptions = {
   origin: (origin, callback) => {
