@@ -2,8 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   productsSettings: {
-    currentCategory: undefined, // 646f53c6c0a43b4c6da145e4
+    currentCategory: undefined,
     activeCategoryButton: null,
+    isCategorySelectionBlocked: false,
   },
 };
 
@@ -11,7 +12,6 @@ export const productsSlice = createSlice({
   name: "products",
   initialState,
   reducers: {
-    // Тут мені потрібно передати ID поточної категорії а яку натсинув користучач, для того щоб за цим ID дістати відповідні продукти
     setCurrentCategory: {
       reducer(state, action) {
         state.productsSettings.currentCategory = action.payload;
@@ -22,9 +22,14 @@ export const productsSlice = createSlice({
         state.productsSettings.activeCategoryButton = action.payload;
       },
     },
+    setIsCategorySelectionBlocked: {
+      reducer(state, action) {
+        state.productsSettings.isCategorySelectionBlocked = action.payload;
+      },
+    },
   },
 });
 
-export const { setCurrentCategory, setActiveCategoryButton } =
+export const { setCurrentCategory, setActiveCategoryButton, setIsCategorySelectionBlocked } =
   productsSlice.actions;
 export default productsSlice.reducer;

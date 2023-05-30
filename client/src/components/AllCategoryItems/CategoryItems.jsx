@@ -4,10 +4,12 @@ import { useGetAllProductsQuery } from "../../features/products/productsApiSlice
 import classes from "./CategoryItems.module.css";
 import Loader from "../UI/loader/Loader";
 import ProductItem from "../ProductItem/ProductItem";
+import ModalWindow from "../UI/modalWindow/ModalWindow";
+import { setIsCategorySelectionBlocked } from "../../features/products/productsSlice";
 
 const AllCategoryItems = () => {
   const [isSkip, setIsSkip] = useState(true);
-  const { currentCategory } = useSelector(
+  const { currentCategory, isCategorySelectionBlocked } = useSelector(
     state => state.products.productsSettings
   );
 
@@ -43,6 +45,22 @@ const AllCategoryItems = () => {
         {allCategoryItemsLoading && <Loader />}
         {allCategoryItemsSuccess && categoryItems}
       </ul>
+      <ModalWindow
+        visible={isCategorySelectionBlocked}
+        setVisible={setIsCategorySelectionBlocked}
+      >
+        <div
+          className={classes.isCategorySelectionBlocked}
+          onClick={e => e.stopPropagation()}
+        >
+          <h2>
+            You can only order items from a single category at a time. Please
+            complete or decline your current order before selecting items from a
+            different category.
+          </h2>
+        </div>
+      </ModalWindow>
+      ;
       <div className={classes.pagination}>
         <button>1</button>
         <button>2</button>

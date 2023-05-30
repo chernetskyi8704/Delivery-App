@@ -34,3 +34,10 @@
   justify-content: center;
   height: 50%;
 }
+
+.isCategorySelectionBlocked {
+  display: flex;
+  padding: 15px;
+  background-color: #ffbf00;
+  border-radius: 15px;
+}
