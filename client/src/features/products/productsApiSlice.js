@@ -4,11 +4,11 @@ export const productsApiSlice = apiSlice.injectEndpoints({
   endpoints: builder => ({
     getAllCategories: builder.query({
       query: () => `/categories`,
-      providesTags: result => ["Category"],
+      providesTags: () => ["Category"],
     }),
     getAllProducts: builder.query({
       query: ({ categoryId }) => `/categories/${categoryId}`,
-      providesTags: result => ["ProductItems"],
+      providesTags: () => ["ProductItems"],
     }),
   }),
 });
