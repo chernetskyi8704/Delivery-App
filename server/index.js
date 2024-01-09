@@ -7,22 +7,14 @@ const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
 const app = express();
 const corsOptions = require("./config/corsOptions.js");
-const router = require("./router/index.js")
+const router = require("./router/index.js");
 
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors(corsOptions));
-app.use("/api", router)
-
-app.use((req, res, next) => {
-    res.header("Access-Control-Allow-Origin", "https://chernetskyi-delivery-app.netlify.app");
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With');
-    res.header('Access-Control-Allow-Credentials', true);
-    next();
-  });
+app.use("/api", router);
 
 const server = http.createServer(app);
 
