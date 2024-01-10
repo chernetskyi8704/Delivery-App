@@ -13,12 +13,14 @@ const AllCategoryItems = () => {
     state => state.products.productsSettings
   );
 
+  // If currentCategory is chosen we set isSkip flag to false that would allowed us to fetch the necessary data
   useEffect(() => {
     if (currentCategory) {
       setIsSkip(false);
     }
   }, [currentCategory]);
 
+  // If the skip flag is active we didn't get the curent category items data
   const {
     data: allCategoryItems,
     isSuccess: allCategoryItemsSuccess,
@@ -60,9 +62,9 @@ const AllCategoryItems = () => {
           </h2>
         </div>
       </ModalWindow>
-      ;
+
       <div className={classes.pagination}>
-        <button>1</button>
+        <button className={classes.active}>1</button>
         <button>2</button>
         <button>3</button>
       </div>
