@@ -1,4 +1,7 @@
 .categoryItem {
+  display: flex;
+  justify-content: center;
+  max-width: 140px;
   border-radius: 15px;
   padding: 20px 70px;
   cursor: pointer;
