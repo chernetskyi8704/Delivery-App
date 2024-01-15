@@ -40,7 +40,7 @@ const AllCategoriesItems = () => {
 
   return (
     <section className={classes.categoriesContainer}>
-      <h2>Categories:</h2>
+      <h2 className={classes.categoriesContainerTitle}>Categories:</h2>
       <ul className={classes.categoryItems} onClick={handleChangeCategory}>
         {isAllCategoriesLoading && <Loader />}
         {isAllCategoriesSuccess &&

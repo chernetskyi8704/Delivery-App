@@ -1,7 +1,5 @@
 .shopsPage {
   display: flex;
-  gap: 30px;
-  padding: 30px;
-  height: 100%;
-  border-right: 1px solid #ccc;
+  padding-top: 30px;
+  min-height: 100%;
 }

@@ -1,7 +1,14 @@
 .productsContainer {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 85%;
+  padding: 0px 30px;
+}
+
+@media (max-width: 1024px) {
+  .productsContainer {
+    width: 70%;
+  }
 }
 
 .productsItems {
